@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.sidebar {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.header {
+    background-color: pink;
+    color: black;
+}
+
+.main-content {
+    background-color: yellowgreen;
+}
+
+
+.main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+
+}
+
+
+.sidebar {grid-area: sidebar;}
+
+.header {grid-area: header;}
+
+.main-content {grid-area: main;}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "project annoucement"
+        "project trending";
+
+    gap:2rem
+}
+
+.your-projects {
+    grid-area: project;
+
+}
+
+.announcements {
+    grid-area: annoucement;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem
+}
