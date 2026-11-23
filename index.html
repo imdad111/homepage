@@ -13,20 +13,21 @@
         <header class="header">
             <div class="header-top">
                 <div class="header-top-left">
-                    <p id="search"> @<input id="input"></p>
+                    <div id="search"><img src="logos/search-svgrepo-com.svg"></div>
+                    <div><input id="input"></div>
                 </div>
 
                 <div class="header-top-right">
-                    <div class="bell-icon">@</div>
-                    <div class="logo-min">@</div>
-                    <div class="company-name">imdad</div>
+                    <div class="bell-icon"><img src="logos/bell-ring.svg"></div>
+                    <div class="logo-min"><img src="logos/morgan-cat.svg"></div>
+                    <div class="company-name">Morgan Oakely</div>
                 </div>
             </div>
 
             <div class="header-bottom">
                 <div class="header-bottom-left">
-                    <div class="logo">@</div>
-                    <p>Hi there,<span id="company-name-main">Morgan Oakley (@morgan)</span></p>
+                    <div class="logo"><img src="logos/morgan-cat.svg"></div>
+                    <div>Hi there,<span id="company-name-main">Morgan Oakley (@morgan)</span></div>
 
                 </div>
 
@@ -43,58 +44,370 @@
         <section class="sidebar">
             <div class="sidebar-logo">
                 <!-- this is logo but for now i am using paragraph -->
-                <p>@</p> 
-                <p>Dashboard</p>  
+                <div><img src="logos\view-dashboard.svg"></div>
+                <p>Dashboard</p>
             </div>
 
             <div class="main-options">
-                <ul><span>@</span> Home</ul>
-                <ul><span>@</span> Profie</ul>
-                <ul><span>@</span> Message</ul>
-                <ul><span>@</span> History</ul>
-                <ul><span>@</span> Task</ul>
-                <ul><span>@</span> Communcation</ul>
+                <ul>
+                    <li>
+                        <div><img src="logos/home.svg"></div>
+                        <p>Home</p>
+                    </li>
+                    <li>
+                        <div> <img src="logos/card-account-details-outline.svg"></div>
+                        <p>Profile</p>
+                    </li>
+                    <li>
+                        <div><img src="logos/message.svg"></div>
+                        <p>Message</p>
+                    </li>
+                    <li>
+                        <div><img src="logos/history.svg"></div>
+                        <p>History</p>
+                    </li>
+                    <li>
+                        <div><img src="logos/file-document-multiple-outline.svg"></div>
+                        <p>Task</p>
+                    </li>
+                    <li>
+                        <div><img src="logos/account-group.svg"></div>
+                        <p>Communities</p>
+                    </li>
+                </ul>
+
+
+
+
             </div>
 
 
             <div class="options">
-                <ul><span>@</span> Setting</ul>
-                <ul><span>@</span> Support</ul>
-                <ul><span>@</span> Privacy</ul>
+
+
+                <ul>
+                    <li>
+                        <div><img src="logos/cog.svg"></div>
+                        <p>Setting</p>
+                    </li>
+                    <li>
+                        <div><img src="logos/help-circle.svg"></div>
+                        <p>Support</p>
+                    </li>
+                    <li>
+                        <div><img src="logos/security.svg"></div>
+                        <p>Privacy</p>
+                    </li>
+                </ul>
+
             </div>
         </section>
 
 
         <section class="main-content">
             <div class="your-projects">
-                <p>Your Projects</p>
+                <h2 class="section-title">Your Projects</h2>
+
                 <div class="cards">
-                     <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum dolor, excepturi dolores expedita eos doloremque dignissimos totam cumque tempore reiciendis iusto vel deleniti vero, alias, odio eum c
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+
+
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project </h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+
+
+                    <article class="card">
+                        <h3 class="card-title">Super Cool Project</h3>
+                        <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <button class="icon-btn" aria-label="Favorite">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Watch">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </button>
+                            <button class="icon-btn" aria-label="Fork">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="4" r="2" />
+                                    <circle cx="18" cy="4" r="2" />
+                                    <circle cx="12" cy="20" r="2" />
+                                    <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6M12 12v6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- repeat <article class="card"> for the other 5 projects -->
                 </div>
-                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime ad ex saepe necessitatibus, similique cumque magnam esse, nemo error neque quod sed libero ratione! Maiores, dicta facere? Corrupti, e</div>
-                <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, numquam cumque ullam voluptate sequi totam nisi est iste ad aperiam qui, sunt veniam!</div>
-                <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur neque, qui quis ab quas officia dolorem fuga ullam nemo, quasi, adipisci alias eaque.</div>
-                <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolore culpa suscipit, temporibus quisquam vero corporis consectetur quos? Facere repellat beatae fuga, eligendi tempore nobis quis aut culpa doloremqu
-                </div>
-                <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quas, vitae molestiae dolorem animi consequatur porro totam laboriosam amet quod quam, corrupti deserunt!</div>
-                </div>
-               
             </div>
 
-            <div class="announcements">
-                <p>Announcement</p>
-                <div class="announc-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt accusamus ipsam deleniti voluptas soluta, quae alias voluptatem iusto eveniet cupiditate ratione est accusantium illo recusandae nostrum dicta, dolore enim! Officia deserunt illo similique.</div>
-            </div>
+            <aside class="announcements">
+                <h2 class="section-title">Announcements</h2>
+                <ul class="announc-card">
+                    <li class="announc-item">
+                        <h3>Site Maintenance</h3>
+                        <p>Vestibulum condimentum tellus lacus, in accumsan elit massa vel. Donec hendrerit sodales
+                            congue...</p>
+                    </li>
+                    <li class="announc-item">
+                        <h3>Community Share Day</h3>
+                        <p>Nam vel lectus erat, consequat rutrum nulla eu, ornare libero.</p>
+                    </li>
+
+                    <li class="announc-item">
+                        <h3>Community Share Day</h3>
+                        <p>Nam vel lectus erat, consequat rutrum nulla eu, ornare libero.</p>
+                    </li>
 
 
-            <div class="trending">
-                <p>Trending</p>
-                <div class="trending-card">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores est tenetur rem perspiciatis corporis optio sint rerum cumque numquam magnam dolor, soluta qui, aliquam amet repudiandae non officiis ab nihil sunt odio? Voluptate!
-                </div>
-            </div>
+                    <!-- more items -->
+                </ul>
+            </aside>
+
+            <aside class="trending">
+                <h2 class="section-title">Trending</h2>
+                <ul class="trending-card">
+                    <li class="trending-item">
+                        <img class="avatar" src="logos/morgan-cat.svg" alt="@ironman avatar" />
+                        <div>
+                            <span class="handle">@Ironman</span>
+                            <span class="role">Avengers</span>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <img class="avatar" src="logos/kendall-bird.svg" alt="@spiderman avatar" />
+                        <div>
+                            <span class="handle">@spiderman</span>
+                            <span class="role">Avengers</span>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <img class="avatar" src="logos/alex-penguin.svg" alt="@Batman avatar" />
+                        <div>
+                            <span class="handle">@Batman</span>
+                            <span class="role">Avengers</span>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <img class="avatar" src="logos/tegan-dog.svg" alt="@Hulk avatar" />
+                        <div>
+                            <span class="handle">@Hulk</span>
+                            <span class="role">Avengers</span>
+                        </div>
+                    </li>
+                    <!-- more items -->
+                </ul>
+            </aside>
         </section>
-
 
 
 

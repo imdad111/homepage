@@ -3,20 +3,32 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: my-font;
+    src:url(fonts/koskobold-bold.woff2) format('woff2') ,
+    url(fonts/koskobold-bold.woff) format('woff');
+}
+
+body{
+    font-family: "my-font",sans-serif;
+    box-sizing: border-box;
+}
 
 
 .sidebar {
-    background-color: blue;
+    background-color: rgb(102, 11, 81);
     color: aliceblue;
 }
 
 .header {
-    background-color: pink;
-    color: black;
+    background-color: rgb(209, 126, 139);
+    color: rgb(26, 25, 25);
+    box-sizing: border-box;
 }
 
 .main-content {
-    background-color: yellowgreen;
+    background-color: rgb(50, 100, 110);
+    
 }
 
 
@@ -64,8 +76,273 @@
 }
 
 
+
+
+
+
+.header{
+   padding: 1.5vw;
+   padding-top: .7vw;
+}
+
+.header-top-left  img{
+    width: 1.5rem;
+    height: 1.5rem;
+    
+
+}
+
+.header-top-left input{
+    border-radius: 10px;
+    width: clamp(20px,40vw,450px);
+    color: rgb(143, 142, 142);
+    background-color: rgb(227, 225, 225);
+  
+    
+}
+
+.header-top-left{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 1em;
+}
+
+
+.header-top-right{
+    display: flex;
+    align-items: center;
+    gap:1.5vw;
+    margin-right: 1.5vw;
+
+}
+
+.header-top-right img{
+    height: 2em;
+    width: 2em;
+}
+.header-top-right .bell-icon img{
+     height: 1.3em;
+    width: 1.3em;
+
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-bottom-left img{
+
+     height: 4em;
+    width: 4em;
+} 
+
+.header-bottom-left{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+   
+}
+
+.header-bottom-left span{
+    display: block;
+    font-size: 1.5em;
+}
+
+
+.header-bottom-right button{
+
+    border-radius: 8px;
+    padding: .5em 1em;
+
+    font-family: "my-font",sans-serif;
+    background-color: pink;
+
+}
+
+.header-bottom-right{
+    display: flex;
+    gap:1.5vw
+    
+}
+
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sidebar .sidebar-logo img{
+    width: 1.5em;
+    height: 1.5em;
+    
+}
+.sidebar .sidebar-logo{
+    display: flex;
+    justify-content: flex-start;
+    gap:1vw;
+    font-size: clamp(20px,2.5vw,40px);
+
+    align-items: center;
+}
+
+
+.sidebar  img{
+    width: 1.5em;
+    height: 1.5em;
+
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
+
+.sidebar .main-options li,
+.sidebar .options li
+{
+    display: flex;
+    gap:.7em
+    
+
+}
+.sidebar .main-options ul,
+.sidebar .options ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.sidebar .main-options ul{
+    margin-bottom: 2rem;
+}
+
+
+
 .cards {
     display: grid;
+   
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem
+}
+
+
+
+.main-content{
+    padding: 10px;
+}
+
+
+
+.section-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* project cards */
+.card {
+  background:wheat;
+  border-left: 4px solid #f5b21b;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.card-text {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #444;
+  stroke-width: 2;
+}
+
+/* announcements and trending boxes */
+.announc-card,
+.trending-card {
+  background:wheat;
+  list-style: none;
+  padding: 10px 12px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.announc-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #141414;
+}
+
+.announc-item:last-child {
+  border-bottom: none;
+}
+
+.announc-item h3 {
+  font-size: 0.75rem;
+}
+
+.announc-item p {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+/* trending users */
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.handle,
+.role {
+  display: block;
+}
+
+.handle {
+  font-size: 0.8rem;
+}
+
+.role {
+  font-size: 0.7rem;
+  color: #777;
 }
